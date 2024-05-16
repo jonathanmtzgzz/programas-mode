@@ -11,11 +11,11 @@ def abrir_gcmx():
 ventana_principal = tk.Tk()
 ventana_principal.title("Programa de Modelado y Simulacion")
 # ventana_principal.minsize(717, 690)
-ventana_principal.resizable(True, False)
+ventana_principal.resizable(False, True)
 ventana_principal.config(padx=50, pady=20)
 
-uanl_logo = PhotoImage(file=".\\img\\uanl_logo.png")
-fime_logo = PhotoImage(file=".\\img\\fime_logo.png")
+uanl_logo = PhotoImage(file=".\\src\\img\\uanl_logo.png")
+fime_logo = PhotoImage(file=".\\src\\img\\fime_logo.png")
 
 label_logo_uanl = tk.Label(ventana_principal, image=uanl_logo)
 label_logo_fime = tk.Label(ventana_principal, image=fime_logo)
