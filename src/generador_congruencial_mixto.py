@@ -5,8 +5,8 @@ from tkinter import messagebox
 # generar interfaz grafica
 ventana = tk.Tk()
 ventana.title("Generador Congruencial Mixto")
-ventana.geometry("560x500")
-ventana.configure(bg="lightblue")
+ventana.resizable(False, True)
+ventana.config(padx=50, pady=20)
 
 table_placeholder = ttk.Treeview(ventana, columns=('#1', '#2', '#3', '#4', '#5'))
 
