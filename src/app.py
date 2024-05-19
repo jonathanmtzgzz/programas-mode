@@ -8,6 +8,12 @@ def abrir_gcm():
 def abrir_gcmx():
     os.system(r'python .\src\generador_congruencial_mixto.py')
 
+def abrir_dex():
+    os.system(r'python .\src\distribucion_exponencial.py')
+
+def abrir_dun():
+    os.system(r'python .\src\distribucion_uniforme.py')
+
 ventana_principal = tk.Tk()
 ventana_principal.title("Programa de Modelado y Simulacion")
 # ventana_principal.minsize(717, 690)
@@ -61,12 +67,12 @@ boton_pf.grid(row=6, column=3, pady=10)
 label8 = tk.Label(ventana_principal, text="Prueba de\nFrecuencias", font=("Arial", 12))
 label8.grid(row=7, column=3)
 
-boton_dex = tk.Button(ventana_principal, text="DEX", command="", font=("Arial", 12), bg='white', fg='black')
+boton_dex = tk.Button(ventana_principal, text="DEX", command=abrir_dex, font=("Arial", 12), bg='white', fg='black')
 boton_dex.grid(row=8, column=1, pady=10)
 label9 = tk.Label(ventana_principal, text="Distribucion\nExponencial", font=("Arial", 12))
 label9.grid(row=9, column=1)
 
-boton_dun = tk.Button(ventana_principal, text="DUN", command="", font=("Arial", 12), bg='white', fg='black')
+boton_dun = tk.Button(ventana_principal, text="DUN", command=abrir_dun, font=("Arial", 12), bg='white', fg='black')
 boton_dun.grid(row=8, column=2, pady=10)
 label10 = tk.Label(ventana_principal, text="Distribucion\nUniforme", font=("Arial", 12))
 label10.grid(row=9, column=2)
